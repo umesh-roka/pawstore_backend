@@ -3,6 +3,7 @@ import userRoute from './routes/userRoute.js'
 import petRoute from './routes/petRoute.js'
 import productRoute from './routes/productRoute.js'
 import orderRoute from './routes/orderRoute.js'
+import feedbackRoute from './routes/feedbackRoute.js'
 import mongoose from 'mongoose';
 import cors from 'cors'
 import fileUpload from 'express-fileupload';
@@ -44,5 +45,6 @@ app.use('/api/users',userRoute);
 app.use('/api/pets',petRoute);
 app.use('/api/products',productRoute);
 app.use('/api/orders',orderRoute);
+app.use('/api/feedbacks',feedbackRoute)
 
 
